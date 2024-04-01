@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PikaPika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/artyom.window.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+    <!-- Ventana 1 -->
+    <div class="contenedor" id="contener">
+        <div class="contenedor2">
+            <h1 id="h">
+                Bienvenido a tu buscador de Pokemones
+            </h1>
+            <h4 id="h2">
+                ¡Busca tus Pokemones favoritos y encuentra imágenes, <br> cualidades y estadísticas!
+            </h4>
+            <button type="button" class="btn btn-dark" id="but">Empezar</button>
+        </div>
+    </div>
+
+    <!-- Ventana 2 -->
+    <div class="contain" id="page">
+
+        <!-- Contenedor, modo de búsqueda -->
+        <div class="con" id="c">
+            <div class="row">
+                <button type="button" id="read" style="left: 150px;">Texto</button>
+                <button type="button" id="speak" style="left: 400px;">Voz</button>
+            </div>
+            <div id="inicio">
+                <h1>¿Cómo deseas hacer tu búsqueda? </h1>
+            </div>
+        </div>
+
+        <!-- Navegador, texto -->
+        <div class="row">
+            <nav class="navbar bg-body-tertiary" id="van">
+                <div class="container-fluid" id="nav" style="width: 950px">
+                    <form class="d-flex" role="search">
+                        <div class="input-group input-group-lg" id="buscar">
+                            <label for="big">
+                                <input class="form-control me-2" id="search" type="search" placeholder="nombre o número"
+                                    aria-label="Search">
+                            </label>
+                        </div>
+                        <button class="btn btn-outline-success" id="ser" type="submit">Search</button>
+                        <button type="button" id="data" style="left: 350px;">Data sheet</button>
+                        <button type="button" id="sta" style="left: 490px;">Stats</button>
+                        <button type="button" id="item" style="left: 630px;">Items</button>
+                        <button type="button" id="duel">Duel</button>
+                    </form>
+
+                    <!-- Errores -->
+                    <h2 class="wrong" id="casillas" style="top: 200px; left: 180px;">Por favor, complete ambas
+                        casillas</h2>
+                    <div class="row">
+                        <h2 class="wrong" id="error2" style="top: 250px; left: 0px;">No encontrado</h2>
+                        <h2 class="wrong" id="error3" style="left: 680px; top: 250px;">No encontrado</h2>
+                    </div>
+                    <h2 class="wrong" id="error">No encontrado</h2>
+                    <h3 class="wrong" id="complete">Por favor,
+                        completa el campo</h3>
+                    <h2 class="wrong" id="items" style="left: 75%;">No se encontraron items</h2>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Carrusel de imágenes_texto -->
+        <div class="secondContainer" id="second">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="poke1">
+                    </div>
+                    <div class="carousel-item" id="poke2">
+                    </div>
+                    <div class="carousel-item" id="poke3">
+                    </div>
+                    <div class="carousel-item" id="poke4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carrusel de items -->
+        <div class="carrusel" id="ca">
+            <div id="carouselExample3" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="im1">
+                    </div>
+                    <div class="carousel-item" id="im2">
+                    </div>
+                    <div class="carousel-item" id="im3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carrusel 2 -->
+        <div class="caja1" id="cajita">
+            <div id="carouselExample1" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="pok1">
+                    </div>
+                    <div class="carousel-item" id="pok2">
+                    </div>
+                    <div class="carousel-item" id="pok3">
+                    </div>
+                    <div class="carousel-item" id="pok4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carrusel 3 -->
+        <div class="caja2" id="cajita2">
+            <div id="carouselExample2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="po1">
+                    </div>
+                    <div class="carousel-item" id="po2">
+                    </div>
+                    <div class="carousel-item" id="po3">
+                    </div>
+                    <div class="carousel-item" id="po4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tabla de estadísticas -->
+        <div class="stats" id="car">
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">Stats</li>
+                <li class="list-group-item" id="stat0"></li>
+                <li class="list-group-item" id="stat1"></li>
+                <li class="list-group-item" id="stat2"></li>
+                <li class="list-group-item" id="stat3"></li>
+                <li class="list-group-item" id="stat4"></li>
+                <li class="list-group-item" id="stat5"></li>
+            </ul>
+        </div>
+
+        <!-- Ficha técnica -->
+        <div class="card border-info mb-3" id="box" style="max-width: 18rem; ">
+            <div class="card-header" id="head"></div>
+            <div class="card-body">
+                <h5 class="card-title" id="title"></h5>
+                <p class="card-text" id="skill"></p>
+                <h5 class="card-title" id="title2"></h5>
+                <p class="card-text1" id="type"></p>
+                <h5 class="card-title" id="title3"></h5>
+                <p class="card-text2" id="weight"></p>
+            </div>
+        </div>
+
+        <!-- Duel -->
+        <div class="input-group input-group-lg" id="buscar2">
+            <label for="bigg" class="row">
+                <div class="col">
+                    <input class="form-control me-2 " id="search1" type="search" placeholder="Pokemon 1"
+                        aria-label="Search" style="width: 200px; margin-left: 200px;">
+                </div>
+                <div class="col">
+                    <button type="button" id="go"
+                        style="width: 100px; margin-left:170px; border-radius: 30px; background-color: rgb(53, 231, 68);">Go!</button>
+                </div>
+                <div class="col">
+                    <input class="form-control me-2 w-10" id="search2" type="search" placeholder="Pokemon 2"
+                        aria-label="Search" style="width: 200px; margin-left:50px;">
+                </div>
+                <div>
+                    <h1 id="vs">VS</h1>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <!-- Ventana 3 -->
+    <div class="ventana3" id="ven3">
+
+        <button type="button" id="myButton"></button>
+
+        <!-- Imágen_pokémon_voz -->
+        <div class="container" id="cont">
+            <div id="image_pokemon"></div>
+        </div>
+
+        <!-- Gráfico de barras -->
+        <div class="grafico" id="chart">
+            <h2 style="padding-left: 220px">Stats</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Ficha técnica -->
+        <div class="card border-info mb-3" id="box_voz" style="max-width: 18rem; left: 150px; ">
+            <div class="card-header" id="headv"></div>
+            <div class="card-body">
+                <h5 class="card-title" id="titlev"></h5>
+                <p class="card-text" id="skillv"></p>
+                <h5 class="card-title" id="title2v"></h5>
+                <p class="card-text1" id="typev"></p>
+                <h5 class="card-title" id="title3v"></h5>
+                <p class="card-text2" id="weightv"></p>
+            </div>
+        </div>
+
+        <!-- Pantalla voz -->
+        <div id="active">
+            <h1>Activa el comando de voz </h1>
+        </div>
+        <div id="ins">
+            <h1>Di el nombre de un <br> pokémon para ver su ficha</h1>
+        </div>
+        <div id="not">
+            <h1>Pokémon no encontrado</h1>
+        </div>
+
+    </div>
+
+    <!-- Flecha -->
+    <div class="arrow" id="f">
+        <button type="button" id="flecha"> ← </button>
+    </div>
+
+    <img src="./imagen/pokemon.png" alt="poke" id="image">
+
+
+</body>
+<p id="activar"></p>
+<script src="js/main.js"></script>
+
+</html>

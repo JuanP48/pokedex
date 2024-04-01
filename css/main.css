@@ -1,0 +1,333 @@
+/* Ventana 1 */
+.contenedor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(7, 6, 11);
+    background: linear-gradient(90deg, rgba(7, 6, 11, 1) 0%, rgba(9, 9, 121, 1) 64%, rgba(8, 8, 93, 0.773546918767507) 100%);
+    text-align: center;
+    overflow: hidden;
+}
+
+#but {
+    margin-top: 80px;
+    width: 150px;
+}
+
+#h {
+    color: rgb(243, 223, 223);
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+#h2 {
+    color: rgb(243, 223, 223);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ventana 2 */
+#page {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(22, 41, 156, 1) 0%, rgba(220, 247, 32, 1) 100%, rgba(136, 148, 50, 1) 100%, rgba(205, 51, 72, 0.5970763305322129) 100%);
+    display: none;
+    overflow: hidden;
+}
+/* Modo de búsqueda */
+.con {
+    margin-left: 320px;
+    width: 700px;
+    height: 500px;
+    border: 4px solid #000000;
+    margin-top: 30px;
+    position: absolute;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 0.11248249299719892) 100%);
+    text-align: center;
+}
+
+#inicio {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 120px;
+}
+
+#read, #speak {
+    position: absolute;
+    width: 150px;
+    background-color: rgb(138, 172, 235);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    top: 300px;
+}
+
+/* Ventana de texto */
+#van {
+    top: 0px;
+    width: 950px;
+    left: 210px;
+    display: none;
+}
+
+.secondContainer {
+    margin-left: 90px;
+    width: 500px;
+    height: 500px;
+    border: 4px solid #000000;
+    margin-top: 30px;
+    position: absolute;
+    display: none;
+    background: rgb(85, 34, 195);
+    background: linear-gradient(0deg, rgba(85, 34, 195, 1) 26%, rgba(60, 164, 231, 1) 49%, rgba(55, 191, 239, 1) 67%, rgba(45, 241, 253, 0.3029586834733894) 80%);
+}
+
+#ser {
+    position: absolute;
+    left: 250px;
+}
+
+#data, #sta, #item {
+    position: absolute;
+    width: 135px;
+    background-color: rgb(216, 179, 199);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    left: 350px;
+    border-radius: 20px;
+}
+
+#box {
+    margin-left: 680px;
+    top: 100px;
+    display: none;
+    background-color: rgb(216, 179, 199);
+}
+
+.stats {
+    margin-left: 680px;
+    width: 290px;
+    height: 255px;
+    margin-top: 130px;
+    position: absolute;
+    display: none;
+}
+
+.carrusel{
+    height: 125px;
+    width: 125px;
+    display: none;
+    position: absolute;
+    left: 750px;
+    top: 200px;
+}
+
+.list-group-item {
+    font-weight: bold;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+#error, #complete, #items{
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    margin-top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+}   
+
+/* Ventana comparación */
+#duel {
+    position: absolute;
+    width: 120px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    left: 800px;
+    border-radius: 20px;
+}
+
+#buscar2 {
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+
+.caja1 {
+    position: absolute;
+    border: 4px solid #000000;
+    width: 500px;
+    height: 500px;
+    left: 50px;
+    top: 120px;
+    display: none;
+    background-color: #f83f5e;
+}
+
+.caja2 {
+    position: absolute;
+    border: 4px solid #000000;
+    width: 500px;
+    height: 500px;
+    left: 820px;
+    top: 120px;
+    display: none;
+    background-color: #2487c0;
+}
+
+#vs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrong {
+    color: black;
+    position: absolute;
+    display: none;
+}
+
+/* Ventana de búsqueda por voz */
+.ventana3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1000px;
+    overflow: hidden;
+    display: none;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(251, 250, 247, 1) 89%);
+}
+
+.container {
+    margin-left: 90px;
+    width: 500px;
+    height: 500px;
+    border: 4px solid #000000;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+#box_voz {
+    margin-left: 650px;
+    top: 100px;
+    display: none;
+    background-color: rgb(216, 179, 199);
+}
+
+.grafico {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 90px;
+    top: 600px;
+    display: none;
+}
+
+#myButton {
+    display: none;
+    position: absolute;
+    background-color: rgb(84, 197, 212);
+    width: 250px;
+    left: 550px;
+}
+
+#ins,
+#active,
+#not {
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#skill,
+#skillv {
+    font-size: 20px;
+    font-family: Sacramento;
+}
+
+#type,
+#typev {
+    font-size: 20px;
+    font-family: Sacramento;
+}
+
+#weight,
+#weightv {
+    font-size: 20px;
+    font-family: Sacramento;
+}
+
+#title,
+#titlev {
+    color: red;
+    font-size: 25px;
+    font-family: Parisienne;
+}
+
+#title2,
+#title2v {
+    color: rgb(21, 184, 61);
+    font-size: 25px;
+    font-family: Parisienne;
+}
+
+#title3,
+#title3v {
+    color: rgb(180, 31, 160);
+    font-size: 25px;
+    font-family: Parisienne;
+}
+
+#head,
+#headv {
+    font-size: 35px;
+    color: rgb(30, 32, 196);
+    font-family: Parisienne;
+    background-color: rgb(175, 166, 166);
+}
+
+#image {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    height: 120px;
+    width: 120px;
+}
+
+#flecha {
+    background-color: rgb(209, 53, 53);
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 1000;
+    display: none;
+}
