@@ -84,17 +84,6 @@ function voz() {
                         var weight = data.weight
                     }
 
-                    /* if (data.abilities && data.abilities.length === 1) {
-                        var skills = data.abilities[0].ability.name
-                    }
-                    if (data.abilities && data.abilities.length === 2) {
-                        var skills = data.abilities[0].ability.name + "<br> " + data.abilities[1].ability.name
-                    }
-
-                    if (data.abilities && data.abilities.length === 3) {
-                        var skills = data.abilities[0].ability.name + "<br> " + data.abilities[1].ability.name + "<br> " + data.abilities[2].ability.name
-                    } */
-
                     //Ficha técnica
                     $("#headv").html(pik)
                     $("#titlev").html("Abilities")
@@ -225,7 +214,7 @@ function text() {
                 var abilities = data.abilities.map(habilidad => habilidad.ability.name)
                 var skills = abilities.join("<br> ")
             }
-            
+
             //Ficha técnica
             $("#head").html(data.name.charAt(0).toUpperCase() + data.name.slice(1))
             $("#title").html("Abilities")
@@ -234,18 +223,6 @@ function text() {
             $("#type").html(data.types[0].type.name)
             $("#title3").html("Weight")
             $("#weight").html(data.weight)
-
-            /* var stats1 = data.stats[1].stat.name + ": " + data.stats[1].base_stat
-            var stats2 = data.stats[2].stat.name + ": " + data.stats[2].base_stat
-            var stats3 = data.stats[3].stat.name + ": " + data.stats[3].base_stat
-            var stats4 = data.stats[4].stat.name + ": " + data.stats[4].base_stat
-            var stats5 = data.stats[5].stat.name + ": " + data.stats[5].base_stat
-
-            $("#stat1").html(stats1)
-            $("#stat2").html(stats2)
-            $("#stat3").html(stats3)
-            $("#stat4").html(stats4)
-            $("#stat5").html(stats5) */
 
             //Estadísticas
             for (let i = 0; i <= 5; i++) {
@@ -283,7 +260,7 @@ function text() {
                         $("#box, #car").fadeOut();
                         if (data.held_items.length === 0) {
                             document.getElementById("ca").style.display = "none"
-                        } else{
+                        } else {
                             document.getElementById("ca").style.display = "block"
                         }
                     }
@@ -295,7 +272,7 @@ function text() {
             if (activeIndex === 1 || activeIndex === 2) {
                 $('#carouselExample3').carousel(0);
             }
-            
+
             //Carrusel de items
             if (data.held_items.length === 1) {
                 $("#im2").remove();
