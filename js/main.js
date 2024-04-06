@@ -359,10 +359,8 @@ function text2() {
         contentType: "application/json",
         success: function (data) {
             console.log(data)
-
             $("#cajita2").fadeIn();
             document.getElementById("error3").style.display = "none"
-
             $("#po1").html(`<img src="${data.sprites.other.home.front_default}">`)
             $("#po2").html(`<img src="${data.sprites.other.dream_world.front_default}" style="width: 450px; height: auto; padding-left: 90px;">`)
             $("#po3").html(`<img src="${data.sprites.other.home.front_shiny}">`)
@@ -409,6 +407,7 @@ $(document).ready(function () {
     $("#duel").on("click", function (event) {
         event.preventDefault();
         $("#second, #box, #car, #ca, #complete").fadeOut();
+        document.getElementById("vs").style.display = "none";
         $("#buscar2").fadeIn();
         document.getElementById("search").value = "";
     })
@@ -418,7 +417,7 @@ $(document).ready(function () {
         var caja1 = document.getElementById("search1").value;
         var caja2 = document.getElementById("search2").value;
         if (caja1 === "" || caja2 === "") {
-            $("#cajita, #cajita2, #error2, #error3").fadeOut()
+            $("#cajita, #cajita2, #error2, #error3, #vs").fadeOut()
             document.getElementById("casillas").style.display = "block"
         } else {
             text1(); text2();
